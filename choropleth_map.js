@@ -26,7 +26,7 @@
     var path = d3.geoPath()
         .projection(projection);
 
-    var uniqContainerClass = alamode.addContainerElement(htmlElement);
+    var uniqContainerClass = tt.addContainerElement(htmlElement);
 
     d3.select(uniqContainerClass)
         .append("div")
