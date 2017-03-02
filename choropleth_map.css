@@ -1,0 +1,23 @@
+
+
+
+/*Zipcode choropleth*/
+.mode-zipcode-chorolpleth{
+  text-align: center;
+}
+
+.zipcodes{
+  fill: none;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
