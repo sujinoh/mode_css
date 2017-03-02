@@ -1,4 +1,13 @@
-/*Zipcode choropleth*/
+/*General styling*/
+.mode-graphic-container {
+  border: 1px solid #F2F3F3;
+  max-width: 1162px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: scroll;
+}
+
 .mode-graphic-title {
   font-size: 14px;
   line-height: 48px;
@@ -15,6 +24,7 @@ h1.mode-error {
   font-weight: 500;
 }
 
+/*Zipcode choropleth*/
 .mode-zipcode-chorolpleth{
   text-align: center;
 }
@@ -23,6 +33,7 @@ h1.mode-error {
   fill: none;
 }
 
+/*Legend*/
 .legend {
     line-height: 18px;
     color: #555;
