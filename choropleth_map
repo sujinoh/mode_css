@@ -4,7 +4,7 @@
 // Built with Leaflet
   // http://leaflet.github.io/Leaflet.heat/demo/
   leafletMap: function(o) {
-    var id = alamode.makeId(10);
+    var id = tt.makeId(10);
 
     var latColumn = o["lat_column"],
         lngColumn = o["lng_column"],
@@ -19,7 +19,7 @@
         dotRadius = o["dot_size"] || .4,
         dotOpacity = o["dot_opacity"] || .8;
 
-    var data = alamode.getDataFromQuery(queryName),
+    var data = tt.getDataFromQuery(queryName),
         validData = [];
 
     data.forEach(function(d) {
@@ -28,7 +28,7 @@
       }
     })
 
-    var uniqContainerClass = alamode.addContainerElement(htmlElement);
+    var uniqContainerClass = tt.addContainerElement(htmlElement);
 
     d3.select(uniqContainerClass)
       .style("height",height + "px")
@@ -81,9 +81,9 @@
 
     heatmapLayer.setData(d);
     
-var legend = L.control({position: 'bottomright'});
+  var legend = L.control({position: 'bottomright'});
 
-legend.onAdd = function (map) {
+  legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
         grades = [0, 10, 20, 50, 100, 200, 500, 1000],
